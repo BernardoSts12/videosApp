@@ -1,15 +1,26 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-title>
-      Tab 1
+      VideosApp
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-searchbar animated="true" placeholder="buscar"></ion-searchbar>
+
+  <ion-item lines="full">
+    <ion-thumbnail slot="start">
+      <img alt="Silhouette of mountains" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xf9wuDcqlUPWABZNeDKPbZUjWx0.jpg" />
+    </ion-thumbnail>
+    <ion-label class="ion-text-wrap">
+      <div>
+        <h1>The Walking Dead</h1>
+        <p>12/10/2001 (BR) - 1h 50m</p>
+        <p>Ação, Terror, Fantasia</p>
+      </div>
+    </ion-label>
+
+    <ion-chip color="success" outline>76%</ion-chip>
+  </ion-item>
 </ion-content>
